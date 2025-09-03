@@ -18,7 +18,7 @@ public class CustomerController {
         return new ResponseEntity<>(customerModel, HttpStatus.OK);
 
     }
-    @GetMapping("/getDetail")
+    @GetMapping("/getDetail")//
     public ResponseEntity<CustomerModel> getCustomerDetail(@RequestParam String email){
         CustomerModel customerModel =customerService.getCustomerDetail(email);
         return new ResponseEntity<>(customerModel, HttpStatus.OK);
